@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    title menu
+    link(rel="stylesheet" href="css/main.css")
+    link(href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet")      
+  body
+    div.menu
+      div.menu__close       
+      ul.menu__list
+         - var values = ["home","about","work","services","team","contract"];
+           each val in values
+             li()
+              a(href="#")= val
+         li.nav__li
+           if registered
+             a( href="#") logout
+           else
+             a( href="#") login  
+      div.menu__contacts
+        a(href="tel:9125551234") (912) 555-1234
+        a(href="mailto:office@website.com") office@website.com         
+      ul.menu__social
+        - var values = ["f","t","g"];
+          each val in values
+            li()
+              a(href="#")= val

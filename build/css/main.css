@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecedee;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.menu {
+  width: 250px;
+  background-color: #565d67;
+  padding: 40px 0 40px 40px;
+  margin: 40px 0 0 40px;
+}
+
+.menu__close {
+  position: relative;
+  transition: 1s;
+}
+
+.menu__close::after {
+  content: "";
+  background: url(../images/close.png);
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: -30px;
+  left: 90%;
+}
+
+.menu__close:hover {
+  filter: invert(30%) blur(0.5px);
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu__list a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: 1s;
+  padding-bottom: 2px;
+  border-bottom: 0px solid #B0BEC5;
+}
+
+.menu__list a:hover {
+  color: #B0BEC5;
+  border-bottom-width: 1px;
+}
+
+.menu__list li {
+  margin-bottom: 30px;
+}
+
+.menu__contacts {
+  position: relative;
+  margin-top: 50px;
+}
+
+.menu__contacts a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9em;
+  display: block;
+}
+
+.menu__contacts a:hover {
+  color: #B0BEC5;
+  transition: 1s;
+}
+
+.menu__contacts::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  top: -25px;
+  background-color: #ffffff;
+  width: 160px;
+}
+
+.menu__social {
+  display: flex;
+  margin-top: 30px;
+}
+
+.menu__social a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 3px 11px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.menu__social a:hover {
+  color: #B0BEC5;
+  border-color: #B0BEC5;
+  transition: 1s;
+}

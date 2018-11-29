@@ -1,0 +1,97 @@
+.menu {
+  width: 250px;
+  background-color: $menu-background;
+  padding:40px 0 40px 40px;
+  margin: 40px 0 0 40px;
+
+  &__close {
+    position: relative;
+    transition: 1s;
+
+    &::after {
+      content: "";
+      background: url(../images/close.png);
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      top: -30px;
+      left: 90%;
+    }
+
+    &:hover {
+      filter: invert(30%) blur(0.5px);
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  &__list {
+    a {
+    color: $text-color;
+    text-decoration: none;
+    font-size: $text-size;
+    text-transform: uppercase;
+    transition: 1s;
+    padding-bottom: 2px;
+    border-bottom: 0px solid $hover-color;
+
+      &:hover {
+      color: $hover-color;
+      border-bottom-width: 1px;
+      }  
+    }
+    
+    li {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__contacts {
+    position: relative;
+    margin-top: 50px;
+    
+    a {
+      color: $text-color;
+      text-decoration: none;
+      font-size:0.9em;
+      display: block;
+
+      &:hover {
+        color: $hover-color;
+        transition: 1s;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      top: -25px;
+      background-color: $text-color;
+      width: 160px;
+    }
+}
+
+  &__social {
+    display: flex;
+    margin-top: 30px;
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+      font-size: 0.9em;
+      padding: 3px 11px;
+      border: 1px solid  $text-color;
+      border-radius: 50%;
+      margin-right: 10px;
+
+      &:hover {
+        color: $hover-color;
+        border-color: $hover-color;
+        transition: 1s;
+      }
+    }
+  }
+}
